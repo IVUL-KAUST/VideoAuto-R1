@@ -73,7 +73,7 @@ bash scripts/eval/benchmark_qwen/eval_qwen3_vl_128k.sh
 For evaluating our VideoAuto-R1 models, please run the following scripts:
 ```bash
 # for Qwen2.5-VL
-bash scripts/eval/benchmark_videoauto_r1/eval_videoauto_r1_qwen2_5_vl_16k.sh
+bash scripts/eval/grpo_autothink/eval_qwen2_5_vl_auto_16k.sh
 
 # for Qwen3-VL
 bash scripts/eval/grpo_autothink/eval_qwen3_vl_auto_128k.sh
