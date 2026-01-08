@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/Models-HuggingFace-yellow.svg" /></a>
 <a href="https://huggingface.co/datasets/IVUL-KAUST/VideoAuto-R1-Data" alt="data">
     <img src="https://img.shields.io/badge/Data-HuggingFace-yellow.svg" /></a>
-<a href="https://github.com/IVUL-KAUST/VideoAuto-R1/blob/main/LICENSE" alt="license">
+<a href="https://github.com/IVUL-KAUST/VideoAuto-R1/blob/main/LICENSE.txt" alt="license">
     <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" /></a>
 <a href="https://img.shields.io/github/stars/IVUL-KAUST/VideoAuto-R1" alt="stars">
     <img src="https://img.shields.io/github/stars/IVUL-KAUST/VideoAuto-R1" /></a>
