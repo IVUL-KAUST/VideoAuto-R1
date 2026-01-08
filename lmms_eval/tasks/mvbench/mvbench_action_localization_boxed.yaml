@@ -1,0 +1,8 @@
+include: _default_boxed_template_yaml
+task: mvbench_action_localization_boxed
+dataset_name: action_localization
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: action_localization
+    post_prompt: "Put your final answer in \\boxed{}."

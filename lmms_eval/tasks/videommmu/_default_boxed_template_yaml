@@ -1,0 +1,11 @@
+dataset_path: lmms-lab/VideoMMMU
+dataset_kwargs:
+  token: True
+  video: True
+  cache_dir: video_mmmu
+lmms_eval_specific_kwargs:
+  default:
+    mcq_prompt: "Put your final answer in \\boxed{}."
+    open_ended_prompt: "Put your final answer in \\boxed{}."
+generation_kwargs:
+  max_new_tokens: 8192

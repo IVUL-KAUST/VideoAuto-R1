@@ -1,0 +1,11 @@
+include: _default_template_yaml
+task: mvp_mini_human_object_interactions
+dataset_name: human_object_interactions
+test_split: mini
+metric_list:
+  - metric: pair_accuracy
+    aggregation: !function utils.mvp_mini_hoi_pair_accuracy
+    higher_is_better: true
+  - metric: single_accuracy
+    aggregation: !function utils.mvp_single_accuracy
+    higher_is_better: true

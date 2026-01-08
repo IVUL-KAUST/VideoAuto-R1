@@ -1,0 +1,27 @@
+group: mvbench_boxed
+task:
+  - mvbench_action_sequence_boxed
+  - mvbench_moving_count_boxed
+  - mvbench_action_prediction_boxed
+  - mvbench_episodic_reasoning_boxed
+  - mvbench_action_antonym_boxed
+  - mvbench_action_count_boxed
+  - mvbench_scene_transition_boxed
+  - mvbench_object_shuffle_boxed
+  - mvbench_object_existence_boxed
+  - mvbench_fine_grained_pose_boxed
+  - mvbench_unexpected_action_boxed
+  - mvbench_moving_direction_boxed
+  - mvbench_state_change_boxed
+  - mvbench_object_interaction_boxed
+  - mvbench_character_order_boxed
+  - mvbench_action_localization_boxed
+  - mvbench_counterfactual_inference_boxed
+  - mvbench_fine_grained_action_boxed
+  - mvbench_moving_attribute_boxed
+  - mvbench_egocentric_navigation_boxed
+aggregate_metric_list:
+  - metric: mvbench_accuracy
+    weight_by_size: True
+
+# ['action_sequence', 'moving_count', 'action_prediction', 'episodic_reasoning', 'action_antonym', 'action_count', 'scene_transition', 'object_shuffle', 'object_existence', 'fine_grained_pose', 'unexpected_action', 'moving_direction', 'state_change', 'object_interaction', 'character_order', 'action_localization', 'counterfactual_inference', 'fine_grained_action', 'moving_attribute', 'egocentric_navigation']

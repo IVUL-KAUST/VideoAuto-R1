@@ -1,0 +1,7 @@
+group: video_mmmu_boxed
+task:
+  - video_mmmu_adaptation_boxed
+  - video_mmmu_comprehension_boxed
+  - video_mmmu_perception_boxed
+aggregate_metric_list:
+  - metric: mmmu_acc

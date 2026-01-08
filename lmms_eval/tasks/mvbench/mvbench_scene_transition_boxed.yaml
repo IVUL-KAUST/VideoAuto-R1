@@ -1,0 +1,8 @@
+include: _default_boxed_template_yaml
+task: mvbench_scene_transition_boxed
+dataset_name: scene_transition
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: scene_transition
+    post_prompt: "Put your final answer in \\boxed{}."

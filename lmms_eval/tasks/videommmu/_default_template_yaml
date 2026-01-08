@@ -1,0 +1,11 @@
+dataset_path: lmms-lab/VideoMMMU
+dataset_kwargs:
+  token: True
+  video: True
+  cache_dir: video_mmmu
+lmms_eval_specific_kwargs:
+  default:
+    mcq_prompt: "Answer with the option's letter from the given choices directly and only give the best option."
+    open_ended_prompt: "Please only provide the numerical value (e.g., 42 or 3.14)."
+generation_kwargs:
+  max_new_tokens: 1024

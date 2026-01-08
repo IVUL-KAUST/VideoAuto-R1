@@ -1,0 +1,42 @@
+DAPO-Math:
+  anno_path: data/DAPO-Math/dapo_math_filter-6k.json
+
+VIRL:
+  anno_path: data/ViRL/virl-filter-23k.json
+  data_path: data/ViRL/
+
+ThinkLite-VL-Hard:
+  anno_path: data/ThinkLite-VL-Hard/thinklite-filter-4k.json
+  data_path: data/ThinkLite-VL-Hard/
+
+VideoR1:
+  anno_path: data/Video-R1/Video-R1-filter-17k.json
+  data_path: data/Video-R1/videos/
+
+TVBench:
+  anno_path: data/TVBench/filter_json/
+  data_path: data/TVBench/videos/
+
+STI-Bench:
+  anno_path: data/STI-Bench/stibench-filter-1.5k.json
+  data_path: data/STI-Bench/videos/
+
+MMR-VBench:
+  anno_path: data/MMR-VBench/mmrv-filter-0.5k.json
+  data_path: data/MMR-VBench/videos/
+
+Charades-STA:
+  anno_path: data/CharadesSTA/charades_sta_train.json
+  data_path: data/CharadesSTA/Charades_v1_480/
+
+ActivityNet-TVG:
+  anno_path: data/ActivityNet-TVG/anet_tvg_filter.json
+  data_path: data/ActivityNet-TVG/videos_train/
+
+TimeR1:
+  anno_path: data/TimeR1/train_2k5.json
+  data_path: data/TimeR1/videos/
+
+NeXT-GQA:
+  anno_path: data/NeXT-GQA/nextgqa_train.json
+  data_path: data/NeXT-GQA/nextgqa_train/

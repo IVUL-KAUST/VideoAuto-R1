@@ -1,0 +1,11 @@
+include: _default_template_yaml
+task: mvp_robot_object_interactions
+dataset_name: robot_object_interactions
+test_split: full
+metric_list:
+  - metric: pair_accuracy
+    aggregation: !function utils.mvp_roi_pair_accuracy
+    higher_is_better: true
+  - metric: single_accuracy
+    aggregation: !function utils.mvp_single_accuracy
+    higher_is_better: true

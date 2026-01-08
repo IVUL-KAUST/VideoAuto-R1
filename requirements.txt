@@ -1,0 +1,21 @@
+# videoauto-r1 dependencies
+torch==2.8.0
+torchvision==0.23.0
+transformers==4.57.1
+vllm==0.11.0
+deepspeed==0.16.8
+accelerate==1.11.0
+trl==0.23.0
+math-verify==0.8.0
+torchcodec==0.7.0
+tensorboardX
+av
+
+# lmms-eval dependencies
+loguru
+pytablewriter
+sacrebleu>=1.5.0
+evaluate>=0.4.0
+sqlitedict==2.1.0
+tenacity==8.3.0
+decord==0.6.0

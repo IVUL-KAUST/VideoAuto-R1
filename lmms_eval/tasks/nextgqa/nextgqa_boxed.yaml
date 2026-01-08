@@ -1,0 +1,38 @@
+dataset_path: sming256/NeXTGQA
+dataset_kwargs:
+  token: True
+  cache_dir: nextgqa
+  video: True
+task: nextgqa_boxed
+test_split: test
+output_type: generate_until
+doc_to_visual: !function utils.gqa_doc_to_visual
+doc_to_text: !function utils.gqa_doc_to_text
+doc_to_target: !function utils.gqa_doc_to_answer
+process_results: !function utils.gqa_process_boxed_results_generation
+generation_kwargs:
+  max_new_tokens: 16384
+  temperature: 0
+  top_p: 1.0
+  num_beams: 1
+  do_sample: false
+metric_list:
+  - metric: accuracy
+    aggregation: !function utils.multi_choice_aggregate_nextgqa_accuracy
+    higher_is_better: true
+  - metric: iou_0.3
+    aggregation: !function utils.temporal_grounding_aggregate_nextgqa_iou_03
+    higher_is_better: true
+  - metric: iou_0.5
+    aggregation: !function utils.temporal_grounding_aggregate_nextgqa_iou_05
+    higher_is_better: true
+  - metric: iou_0.7
+    aggregation: !function utils.temporal_grounding_aggregate_nextgqa_iou_07
+    higher_is_better: true
+  - metric: m_iou
+    aggregation: !function utils.temporal_grounding_aggregate_nextgqa_m_iou
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: "Please answer the question, and then provide the video segment that best supports your answer. The start and end timestamps must be in seconds with exactly one decimal place.\nOutput format: \\boxed{answer <> [start, end]}. For example: \\boxed{A <> [20.3, 30.8]}."

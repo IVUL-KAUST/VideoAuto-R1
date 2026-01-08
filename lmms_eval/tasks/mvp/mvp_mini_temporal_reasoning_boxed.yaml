@@ -1,0 +1,11 @@
+include: _default_boxed_template_yaml
+task: mvp_mini_temporal_reasoning_boxed
+dataset_name: temporal_reasoning
+test_split: mini
+metric_list:
+  - metric: pair_accuracy
+    aggregation: !function utils.mvp_mini_tr_pair_accuracy
+    higher_is_better: true
+  - metric: single_accuracy
+    aggregation: !function utils.mvp_single_accuracy
+    higher_is_better: true

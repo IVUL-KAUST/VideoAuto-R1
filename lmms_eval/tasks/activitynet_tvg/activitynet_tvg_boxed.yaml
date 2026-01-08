@@ -1,0 +1,38 @@
+dataset_path: sming256/ActivityNetTVG
+dataset_kwargs:
+  token: True
+  cache_dir: activitynet
+  video: True
+task: activitynet_tvg_boxed
+test_split: test
+
+generation_kwargs:
+  max_new_tokens: 32768
+  temperature: 0
+  top_p: 1.0
+  num_beams: 1
+  do_sample: false
+
+output_type: generate_until
+doc_to_visual: !function utils.temporal_grounding_doc_to_visual
+doc_to_text: !function utils.temporal_grounding_doc_to_text
+doc_to_target: !function utils.temporal_grounding_doc_to_answer
+process_results: !function utils.temporal_grounding_process_boxed_results_generation
+
+metric_list:
+  - metric: iou_0.3
+    aggregation: !function utils.temporal_grounding_aggregate_activitynet_iou_03
+    higher_is_better: true
+  - metric: iou_0.5
+    aggregation: !function utils.temporal_grounding_aggregate_activitynet_iou_05
+    higher_is_better: true
+  - metric: iou_0.7
+    aggregation: !function utils.temporal_grounding_aggregate_activitynet_iou_07
+    higher_is_better: true
+  - metric: m_iou
+    aggregation: !function utils.temporal_grounding_aggregate_activitynet_m_iou
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: "Locate the start and end timestamps of the video segment corresponding to the description: "
+    post_prompt: " Please provide the start and end timestamps (in seconds, precise to one decimal places) in the format \\boxed{[start, end]}."
