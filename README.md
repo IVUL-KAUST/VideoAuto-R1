@@ -1,6 +1,8 @@
-# VideoAuto-R1: Autonomous Video Understanding with Reasoning and Reinforcement Learning
+# VideoAuto-R1: Video Auto Reasoning via Thinking Once, Answering Twice
 
 <p align="left">
+<a href="https://arxiv.org/abs/2601.05175" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2601.05175-b31b1b.svg?style=flat" /></a>
 <a href='https://ivul-kaust.github.io/projects/videoauto-r1/'>
     <img src='https://img.shields.io/badge/Project%20Page-VideoAuto--R1-green'></a>
 <a href="https://huggingface.co/collections/IVUL-KAUST/videoauto-r1" alt="models">
@@ -105,7 +107,12 @@ This project builds upon the following excellent works: [Qwen-VL](https://github
 If you use VideoAuto-R1 in your research, please cite:
 
 ```bibtex
-TBD
+@article{liu2026videoautor1,
+  title={VideoAuto-R1: Video Auto Reasoning via Thinking Once, Answering Twice},
+  author={Liu, Shuming and Zhuge, Mingchen and Zhao, Changsheng and Chen, Jun and Wu, Lemeng and Liu, Zechun and Zhu, Chenchen and Cai, Zhipeng and Zhou, Chong and Liu, Haozhe and Chang, Ernie and Suri, Saksham and Xu, Hongyu and Qian, Qi and Wen, Wei and Varadarajan, Balakrishnan and Liu, Zhuang and Xu, Hu and Bordes, Florian and Krishnamoorthi, Raghuraman and Ghanem, Bernard and Chandra, Vikas and Xiong, Yunyang},
+  journal={arXiv preprint arXiv:2601.05175},
+  year={2026}
+}
 ```
 
 This project is licensed under the Apache License 2.0. See LICENSE file for details.
