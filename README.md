@@ -26,8 +26,9 @@ We propose VideoAuto-R1, a video understanding framework that adopts a "reason-w
 
 
 ## 🔥 Updates
-- **[2025-01-09]**: Try our online demo at [HuggingFace Spaces](https://huggingface.co/spaces/sming256/VideoAuto-R1_Demo)!
-- **[2025-01-08]**: We have released the training code and data for VideoAuto-R1!
+- **[2026-02-23]**: 🔥 VideoAuto-R1 has been accepted by CVPR 2026!
+- **[2026-01-09]**: Try our online demo at [HuggingFace Spaces](https://huggingface.co/spaces/sming256/VideoAuto-R1_Demo)!
+- **[2026-01-08]**: We have released the training code and data for VideoAuto-R1!
 
 ## Installation
 
